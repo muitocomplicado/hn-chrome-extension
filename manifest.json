@@ -1,6 +1,6 @@
 {
   "name": "Hacker News Collapsible Comments",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Adds reddit-like [+] and [-] links to collapse and expand comment threads.",
   "background_page": "background.html",
   "icons" : {
@@ -9,7 +9,7 @@
     },
   "content_scripts" : [
     {
-      "matches" : ["http://news.ycombinator.com/*"],
+      "matches" : ["http://news.ycombinator.com/*","http://hackerne.ws/*"],
       "js" : ["jquery.js", "contentscript.js"],
       "run_at" : "document_idle",
       "all_frames" : false
