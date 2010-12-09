@@ -1,0 +1,18 @@
+{
+  "name": "Hacker News Collapsible Comments",
+  "version": "1.0",
+  "description": "Adds reddit-like [+] and [-] links to collapse and expand comment threads.",
+  "background_page": "background.html",
+  "icons" : {
+      "48" : "icon-48.png",
+      "128" : "icon-128.png"
+    },
+  "content_scripts" : [
+    {
+      "matches" : ["http://news.ycombinator.com/*"],
+      "js" : ["jquery.js", "contentscript.js"],
+      "run_at" : "document_idle",
+      "all_frames" : false
+    }
+  ]
+}
